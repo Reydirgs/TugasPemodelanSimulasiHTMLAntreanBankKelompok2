@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Antrian Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simulasi Antrian Bank</h1>
+        <p class="subtitle">Satuan waktu dalam tabel adalah <strong>menit</strong>.</p>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="iat">IAT:</label>
+                <input type="number" id="iat" min="0" value="0" placeholder="Contoh: 2">
+            </div>
+            <div class="input-group">
+                <label for="waktu-layanan">Waktu Layanan:</label>
+                <input type="number" id="waktu-layanan" min="1" value="5" placeholder="Contoh: 5">
+            </div>
+            <button id="btn-tambah">Tambah Customer</button>
+            <button id="btn-reset" class="btn-danger">Reset Simulasi</button>
+        </div>
+
+        <div class="table-container">
+            <table id="tabel-simulasi">
+                <thead>
+                    <tr>
+                        <th>Customer Ke-</th>
+                        <th>IAT</th>
+                        <th>Waktu Layanan</th>
+                        <th>Waktu Kedatangan</th>
+                        <th>Waktu Mulai</th>
+                        <th>Waktu Selesai</th>
+                        <th>Waktu Antri</th>
+                        <th>Waktu di Sistem</th>
+                        <th>Waktu Teller Idle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
